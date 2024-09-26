@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+            text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+        }
+        p {
+            font-size: 1.5em;
+            animation: slideIn 3s ease-in-out infinite alternate;
+            margin-top: 20px;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0.5; /* Start at 50% opacity */
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1; /* End at full opacity */
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0; /* Start fully transparent */
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1; /* End at full opacity */
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to my App</h1>
+        <p>DevOps and Cloud Engineer</p>
+    </div>
+</body>
+</html>
