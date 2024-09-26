@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app
+  # Add the namespace here
+  namespace: default  # Change 'default' to your namespace if applicable
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80 # This should match the containerPort in deployment.yaml
+  selector:
+    app: my-app
